@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show de Matemática</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Show de Matemática</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="quiz-container">
-        <div class="logo">
-            <span>SHOW DE</span>
-            <span class="math">MATEMÁTICA</span>
-        </div>
-        <div class="question-box" id="questionBox">
-            <div id="questionNumber"></div>
-            <div id="question"></div>
-        </div>
-        <div class="answers" id="answers">
-            <!-- Alternativas pelo JS -->
-        </div>
-        <div class="controls" id="controls">
-            <button onclick="useHelp('pular')" id="btnPular">Pular (2)</button>
-            <button onclick="useHelp('cartas')" id="btnCartas">Cartas (2)</button>
-            <button onclick="useHelp('universitarios')" id="btnUniversitarios">Universitários (2)</button>
-        </div>
-        <div class="progress" id="progress"></div>
-        <div class="final-message" id="finalMessage"></div>
+  <div class="quiz-container">
+    <div class="logo">
+      <span>SHOW DE</span>
+      <span class="math">MATEMÁTICA</span>
     </div>
-    <script src="script.js"></script>
+
+    <div class="question-box" id="questionBox">
+      <div id="questionNumber"></div>
+      <div id="question"></div>
+    </div>
+
+    <div class="answers" id="answers"><!-- preenchido pelo JS --></div>
+
+    <div class="controls" id="controls">
+      <button onclick="useHelp('pular')" id="btnPular">Pular (2)</button>
+      <button onclick="useHelp('cartas')" id="btnCartas">Cartas (2)</button>
+      <button onclick="useHelp('universitarios')" id="btnUniversitarios">Universitários (2)</button>
+    </div>
+
+    <div class="progress" id="progress"></div>
+    <div class="final-message" id="finalMessage"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
